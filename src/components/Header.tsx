@@ -57,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({
           <Truck className="w-3.5 h-3.5 text-[#D4A359]" /> Express Shipping Across India
         </span>
         <span className="hidden sm:inline text-[#8D5A89]">|</span>
-        <span>Complimentary Shipping on Orders Above ₹1,999 • saritaa.in</span>
+        <span>Complimentary Shipping on Orders Above ₹999 • saritaa.in</span>
         <span className="hidden md:inline text-[#8D5A89]">|</span>
         <span className="hidden md:inline-flex items-center gap-1 text-[#E8D5E5]">
           <Sparkles className="w-3.5 h-3.5 text-[#D4A359]" /> 100% Authentic Rajasthani Handblock
@@ -149,7 +149,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="relative hidden md:block w-48 lg:w-64">
               <input
                 type="text"
-                placeholder="Search Bagru, Sanganeri, Sarees..."
+                placeholder="Search Bagru, Sanganeri, Kurta Sets..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => {
@@ -222,7 +222,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="relative mb-4">
             <input
               type="text"
-              placeholder="Search Kurta Sets, Ajrakh, Sarees..."
+              placeholder="Search Kurta Sets, Ajrakh, Anarkalis..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               onFocus={() => {

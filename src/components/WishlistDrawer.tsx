@@ -48,7 +48,7 @@ export const WishlistDrawer: React.FC<WishlistDrawerProps> = ({
                 Your Wishlist is Empty
               </h4>
               <p className="text-xs text-[#7D5E7B] max-w-xs mx-auto">
-                Explore handblock printed Anarkali suits, Ajrakh sarees, and cotton dresses to save your favorite artisanal designs.
+                Explore handblock printed Anarkali suits, Ajrakh kurtas, and cotton dresses to save your favorite artisanal designs.
               </p>
             </div>
           ) : (

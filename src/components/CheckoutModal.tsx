@@ -27,9 +27,9 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     fullName: 'Priya Sharma',
     email: 'priya.sharma@example.com',
     phone: '9876543210',
-    address: '42 Heritage Lane, C-Scheme',
-    pincode: '302001',
-    city: 'Jaipur',
+    address: '12 Fort View Road, Subhash Marg',
+    pincode: '341508',
+    city: 'Kuchaman City',
     state: 'Rajasthan'
   });
 
@@ -39,7 +39,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
   const subtotal = cartItems.reduce((acc, item) => acc + (item.product.price * item.quantity), 0);
   const gstAmount = Math.round((subtotal - discountAmount) * 0.05);
-  const shippingFee = subtotal >= 1999 ? 0 : 150;
+  const shippingFee = subtotal >= 999 ? 0 : 99;
   const grandTotal = subtotal - discountAmount + gstAmount + shippingFee;
 
   const handleAddressSubmit = (e: React.FormEvent) => {

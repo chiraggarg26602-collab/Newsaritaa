@@ -14,7 +14,7 @@ export const AboutStoryView: React.FC = () => {
           </div>
 
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#6B4168]">
-            The Story of saritaa.in • Established 2024
+            The Story of saritaa.in • Kuchaman, Rajasthan • Established 2024
           </span>
 
           <h1 className="font-serif-display text-4xl sm:text-5xl font-bold text-[#2B1A2A] leading-tight">
@@ -23,7 +23,7 @@ export const AboutStoryView: React.FC = () => {
           </h1>
 
           <p className="text-sm sm:text-base text-[#5C455B] leading-relaxed">
-            Founded in 2024 in Jaipur, <strong>saritaa.in</strong> (Saritaa Clothing Store) was born out of a passion for preserving Rajasthan’s timeless handblock printing traditions. 'Sarita' signifies the graceful flow of a river—embodying the fluid elegance of natural vegetable dyes and hand-carved wooden block stamping.
+            Founded in 2024 in Kuchaman City (Nagaur, Rajasthan), <strong>saritaa.in</strong> (Saritaa Clothing Store) was born out of a passion for preserving Rajasthan’s rich heritage of handcrafted kurtas and authentic block printing traditions. 'Sarita' signifies the graceful flow of a river—embodying the fluid elegance of natural vegetable dyes and hand-tailored comfort.
           </p>
 
           <p className="text-sm text-[#5C455B] leading-relaxed">
@@ -50,7 +50,7 @@ export const AboutStoryView: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#4A2848]/80 via-transparent to-transparent flex items-end p-6">
               <p className="text-white text-xs font-semibold">
-                © 2024 SARITAA CLOTHING STORE (saritaa.in) • Master Artisans at Bagru & Sanganer
+                © 2024 SARITAA CLOTHING STORE (saritaa.in) • Origin: Kuchaman City, Rajasthan
               </p>
             </div>
           </div>
@@ -113,7 +113,7 @@ export const AboutStoryView: React.FC = () => {
               saritaa.in Quality Standard
             </h3>
             <p className="text-xs text-[#7D5E7B] leading-relaxed">
-              Carefully quality-checked and packaged in Jaipur before shipping directly to your doorstep.
+              Carefully quality-checked and packaged at our Kuchaman studio before shipping directly to your doorstep.
             </p>
           </div>
         </div>

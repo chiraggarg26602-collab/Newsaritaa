@@ -30,7 +30,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
     category: (selectedCategoryFromHome as Category) || 'All',
     craft: 'All',
     minPrice: 0,
-    maxPrice: 10000,
+    maxPrice: 1000,
     selectedSize: 'All',
     sortBy: 'featured',
     searchQuery: searchQuery,
@@ -87,7 +87,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
       category: 'All',
       craft: 'All',
       minPrice: 0,
-      maxPrice: 10000,
+      maxPrice: 1000,
       selectedSize: 'All',
       sortBy: 'featured',
       searchQuery: '',
@@ -100,7 +100,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
     (filters.craft !== 'All' ? 1 : 0) +
     (filters.selectedSize !== 'All' ? 1 : 0) +
     (filters.searchQuery ? 1 : 0) +
-    (filters.maxPrice < 10000 ? 1 : 0);
+    (filters.maxPrice < 1000 ? 1 : 0);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -245,16 +245,16 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
             </div>
             <input
               type="range"
-              min="1500"
-              max="10000"
-              step="250"
+              min="500"
+              max="1000"
+              step="50"
               value={filters.maxPrice}
               onChange={(e) => setFilters(prev => ({ ...prev, maxPrice: Number(e.target.value) }))}
               className="w-full accent-[#6B4168]"
             />
             <div className="flex justify-between text-[11px] text-[#7D5E7B] mt-1 font-medium">
-              <span>₹1,500</span>
-              <span>₹10,000+</span>
+              <span>₹500</span>
+              <span>₹1,000</span>
             </div>
           </div>
 

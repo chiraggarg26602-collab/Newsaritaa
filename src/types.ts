@@ -1,11 +1,10 @@
 export type Category = 
   | 'All' 
   | 'Kurta Sets' 
-  | 'Sarees' 
+  | 'Kurtas'
   | 'Cotton Dresses' 
   | 'Suits' 
-  | 'Kaftans' 
-  | 'Dupattas';
+  | 'Kaftans';
 
 export type CraftType = 
   | 'Bagru' 

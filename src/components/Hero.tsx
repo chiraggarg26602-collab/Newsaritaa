@@ -56,7 +56,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCraftClick }) => {
             <div className="pt-6 grid grid-cols-3 gap-4 border-t border-[#E8D4E5] text-center lg:text-left">
               <div>
                 <p className="font-serif-display text-xl sm:text-2xl font-bold text-[#2B1A2A]">500+</p>
-                <p className="text-xs text-[#7D5E7B]">Jaipur Artisans</p>
+                <p className="text-xs text-[#7D5E7B]">Kuchaman Artisans</p>
               </div>
               <div>
                 <p className="font-serif-display text-xl sm:text-2xl font-bold text-[#2B1A2A]">100%</p>

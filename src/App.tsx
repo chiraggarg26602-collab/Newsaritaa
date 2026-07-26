@@ -145,7 +145,7 @@ export default function App() {
                     Patron Favorite Outfits
                   </h2>
                   <p className="text-xs text-[#7D5E7B] mt-1">
-                    Most loved handblock-printed Anarkalis, sarees, and dresses across India.
+                    Most loved handblock-printed Anarkalis, kurta sets, and dresses across India.
                   </p>
                 </div>
 

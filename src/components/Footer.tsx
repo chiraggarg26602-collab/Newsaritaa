@@ -21,11 +21,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick, onCategoryClick }) =
               <SaritaaLogo variant="plum" size="lg" showSubtext={true} />
             </div>
             <p className="text-xs text-[#D8C2D5] leading-relaxed max-w-sm pt-2">
-              Artisanal Handblock Printed Textiles & Authentic Rajasthani Ethnic Fashion. Hand-stamped with organic vegetable dyes by Jaipur and Kutch master craftsmen.
+              Artisanal Handblock Printed Textiles & Authentic Rajasthani Ethnic Fashion. Handcrafted kurtas and handcrafted textiles from Kuchaman City, Nagaur, Rajasthan.
             </p>
             <div className="pt-2 text-xs space-y-2 text-[#D8C2D5]">
               <p className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#D4A359]" /> Artisan Studio: C-Scheme, Jaipur, Rajasthan - 302001
+                <MapPin className="w-3.5 h-3.5 text-[#D4A359]" /> Artisan Studio & HQ: Kuchaman City, Nagaur, Rajasthan - 341508
               </p>
               <p className="flex items-center gap-2 font-medium">
                 <Mail className="w-3.5 h-3.5 text-[#D4A359]" /> <a href="mailto:sneha@saritaa.in" className="hover:text-white underline decoration-[#D4A359]">sneha@saritaa.in</a>
@@ -42,7 +42,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick, onCategoryClick }) =
               Shop Categories
             </h4>
             <ul className="space-y-2 text-xs">
-              {['Kurta Sets', 'Sarees', 'Cotton Dresses', 'Suits', 'Kaftans', 'Dupattas'].map((cat) => (
+              {['Kurta Sets', 'Kurtas', 'Cotton Dresses', 'Suits', 'Kaftans'].map((cat) => (
                 <li key={cat}>
                   <button
                     onClick={() => {

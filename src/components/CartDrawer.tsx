@@ -26,7 +26,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   const [promoError, setPromoError] = useState('');
 
   const subtotal = cartItems.reduce((acc, item) => acc + (item.product.price * item.quantity), 0);
-  const freeShippingThreshold = 1999;
+  const freeShippingThreshold = 999;
   const progressPct = Math.min(100, (subtotal / freeShippingThreshold) * 100);
   const amountNeededForFreeShipping = Math.max(0, freeShippingThreshold - subtotal);
 

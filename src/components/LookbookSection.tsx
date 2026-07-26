@@ -17,7 +17,7 @@ export const LookbookSection: React.FC = () => {
       id: 2,
       image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
       handle: '@ananya_style',
-      tag: 'Ajrakh Double-Sided Silk Saree',
+      tag: 'Ajrakh Double-Sided Silk Kurta Set',
       likes: '2.4k'
     },
     {
