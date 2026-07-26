@@ -75,7 +75,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCraftClick }) => {
               {/* Main Image Card with Mauve & Gold Accent Border */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
-                  src="/products/product-1.jpeg"
+                  src="/products/product-32.jpeg"
                   alt="Saritaa Clothing Store Rajasthani Handblock Outfit"
                   className="w-full h-[420px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-700"
                 />
