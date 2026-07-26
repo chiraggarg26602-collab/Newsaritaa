@@ -40,7 +40,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         onClick={() => onQuickView(product)}
       >
         <img
-          src={isHovered && product.hoverImage ? product.hoverImage : product.primaryImage}
+          src={product.primaryImage}
           alt={product.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
