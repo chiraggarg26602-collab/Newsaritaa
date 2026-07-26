@@ -79,6 +79,16 @@ export const OurCraftView: React.FC<OurCraftViewProps> = ({ onShopCraftClick }) 
                 src={selectedCraft.heroImage}
                 alt={selectedCraft.name}
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.dataset.tried) {
+                    target.dataset.tried = '1';
+                    target.src = '/products/origin_main.jpg';
+                  } else if (target.dataset.tried === '1') {
+                    target.dataset.tried = '2';
+                    target.src = '/products/product-32.jpeg';
+                  }
+                }}
               />
             </div>
           </div>
@@ -94,7 +104,21 @@ export const OurCraftView: React.FC<OurCraftViewProps> = ({ onShopCraftClick }) 
             {selectedCraft.processSteps.map((step) => (
               <div key={step.stepNumber} className="bg-[#FAF4F8] p-5 rounded-xl border border-[#E8D4E5] space-y-3">
                 <div className="aspect-video rounded-lg overflow-hidden bg-white">
-                  <img src={step.imageUrl} alt={step.title} className="w-full h-full object-cover" />
+                  <img 
+                    src={step.imageUrl} 
+                    alt={step.title} 
+                    className="w-full h-full object-cover" 
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.tried) {
+                        target.dataset.tried = '1';
+                        target.src = `/products/step_${step.stepNumber}.jpg`;
+                      } else if (target.dataset.tried === '1') {
+                        target.dataset.tried = '2';
+                        target.src = `/products/product-${step.stepNumber}.jpeg`;
+                      }
+                    }}
+                  />
                 </div>
                 <span className="inline-block bg-[#6B4168] text-white text-[10px] font-bold px-2 py-0.5 rounded">
                   Step 0{step.stepNumber}

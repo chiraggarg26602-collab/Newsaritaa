@@ -69,6 +69,16 @@ export const CraftStorySection: React.FC<CraftStorySectionProps> = ({ onLearnMor
               src={activeCraft.heroImage} 
               alt={activeCraft.name}
               className="w-full h-full object-cover"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.dataset.tried) {
+                  target.dataset.tried = '1';
+                  target.src = '/products/origin_main.jpg';
+                } else if (target.dataset.tried === '1') {
+                  target.dataset.tried = '2';
+                  target.src = '/products/product-32.jpeg';
+                }
+              }}
             />
           </div>
         </div>
@@ -86,6 +96,16 @@ export const CraftStorySection: React.FC<CraftStorySectionProps> = ({ onLearnMor
                     src={step.imageUrl}
                     alt={step.title}
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.tried) {
+                        target.dataset.tried = '1';
+                        target.src = `/products/step_${step.stepNumber}.jpg`;
+                      } else if (target.dataset.tried === '1') {
+                        target.dataset.tried = '2';
+                        target.src = `/products/product-${step.stepNumber}.jpeg`;
+                      }
+                    }}
                   />
                   <span className="absolute top-2 left-2 bg-[#6B4168] text-white text-[10px] font-bold w-6 h-6 rounded-full flex items-center justify-center">
                     0{step.stepNumber}
