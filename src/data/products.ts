@@ -11,12 +11,12 @@ export const PRODUCTS: Product[] = [
     craftType: 'Bagru',
     rating: 4.9,
     reviewCount: 128,
-    primaryImage: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-1.jpeg',
+    hoverImage: '/products/product-2.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-1.jpeg',
+      '/products/product-2.jpeg',
+      '/products/product-3.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Deep Indigo', 'Terracotta Red', 'Off White'],
@@ -39,11 +39,12 @@ export const PRODUCTS: Product[] = [
     craftType: 'Ajrakh',
     rating: 5.0,
     reviewCount: 94,
-    primaryImage: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-2.jpeg',
+    hoverImage: '/products/product-3.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-2.jpeg',
+      '/products/product-3.jpeg',
+      '/products/product-4.jpeg'
     ],
     sizes: ['M', 'L', 'XL'],
     colors: ['Crimson Red', 'Navy Indigo', 'Gold Accent'],
@@ -66,11 +67,12 @@ export const PRODUCTS: Product[] = [
     craftType: 'Sanganeri',
     rating: 4.8,
     reviewCount: 82,
-    primaryImage: 'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-3.jpeg',
+    hoverImage: '/products/product-4.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1000&q=80',
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-3.jpeg',
+      '/products/product-4.jpeg',
+      '/products/product-5.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Linen White', 'Rose Pink', 'Sage Green'],
@@ -93,10 +95,12 @@ export const PRODUCTS: Product[] = [
     craftType: 'Dabu',
     rating: 4.9,
     reviewCount: 106,
-    primaryImage: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-4.jpeg',
+    hoverImage: '/products/product-5.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-4.jpeg',
+      '/products/product-5.jpeg',
+      '/products/product-6.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Deep Indigo', 'Earthy Ochre'],
@@ -119,10 +123,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Ajrakh',
     rating: 4.7,
     reviewCount: 65,
-    primaryImage: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-5.jpeg',
+    hoverImage: '/products/product-6.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-5.jpeg',
+      '/products/product-6.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Terracotta', 'Midnight Indigo'],
@@ -145,10 +150,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Kalamkari',
     rating: 4.9,
     reviewCount: 71,
-    primaryImage: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-6.jpeg',
+    hoverImage: '/products/product-7.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-6.jpeg',
+      '/products/product-7.jpeg'
     ],
     sizes: ['M', 'L'],
     colors: ['Mustard Gold', 'Rust Orange', 'Forest Green'],
@@ -171,10 +177,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Sanganeri',
     rating: 4.8,
     reviewCount: 112,
-    primaryImage: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-7.jpeg',
+    hoverImage: '/products/product-8.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-7.jpeg',
+      '/products/product-8.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Peach Pink', 'Linen Cream'],
@@ -197,10 +204,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Bagru',
     rating: 4.9,
     reviewCount: 58,
-    primaryImage: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-8.jpeg',
+    hoverImage: '/products/product-9.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-8.jpeg',
+      '/products/product-9.jpeg'
     ],
     sizes: ['M', 'L'],
     colors: ['Terracotta Brown', 'Charcoal Black', 'Cream'],
@@ -223,10 +231,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Ajrakh',
     rating: 4.8,
     reviewCount: 89,
-    primaryImage: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-9.jpeg',
+    hoverImage: '/products/product-10.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-9.jpeg',
+      '/products/product-10.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Navy Indigo', 'Madder Red'],
@@ -249,10 +258,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Dabu',
     rating: 4.9,
     reviewCount: 76,
-    primaryImage: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-10.jpeg',
+    hoverImage: '/products/product-1.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-10.jpeg',
+      '/products/product-1.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Olive Green', 'Mustard Gold'],
@@ -275,10 +285,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Kalamkari',
     rating: 4.7,
     reviewCount: 43,
-    primaryImage: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-1.jpeg',
+    hoverImage: '/products/product-3.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-1.jpeg',
+      '/products/product-3.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Indigo', 'Earthy Ochre'],
@@ -301,10 +312,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Sanganeri',
     rating: 4.8,
     reviewCount: 98,
-    primaryImage: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-2.jpeg',
+    hoverImage: '/products/product-4.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-2.jpeg',
+      '/products/product-4.jpeg'
     ],
     sizes: ['M', 'L'],
     colors: ['Ivory Gold', 'Mint Green'],
@@ -327,10 +339,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Bagru',
     rating: 4.8,
     reviewCount: 54,
-    primaryImage: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-5.jpeg',
+    hoverImage: '/products/product-7.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-5.jpeg',
+      '/products/product-7.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Charcoal Black', 'Natural Off-White'],
@@ -353,10 +366,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Ajrakh',
     rating: 5.0,
     reviewCount: 142,
-    primaryImage: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-6.jpeg',
+    hoverImage: '/products/product-8.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-6.jpeg',
+      '/products/product-8.jpeg'
     ],
     sizes: ['M', 'L', 'XL'],
     colors: ['Deep Indigo', 'Madder Red', 'Antiqued Gold'],
@@ -379,10 +393,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Sanganeri',
     rating: 4.7,
     reviewCount: 67,
-    primaryImage: 'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-9.jpeg',
+    hoverImage: '/products/product-1.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-9.jpeg',
+      '/products/product-1.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['Sky Blue', 'White'],
@@ -405,10 +420,11 @@ export const PRODUCTS: Product[] = [
     craftType: 'Dabu',
     rating: 4.9,
     reviewCount: 88,
-    primaryImage: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80',
-    hoverImage: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=80',
+    primaryImage: '/products/product-10.jpeg',
+    hoverImage: '/products/product-2.jpeg',
     additionalImages: [
-      'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80'
+      '/products/product-10.jpeg',
+      '/products/product-2.jpeg'
     ],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     colors: ['Deep Indigo', 'Ecru White'],
@@ -441,3 +457,4 @@ export const CRAFT_TYPES = [
   'Dabu',
   'Kalamkari'
 ] as const;
+
