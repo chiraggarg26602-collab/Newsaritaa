@@ -1,0 +1,6 @@
+{
+  "name": "Nayaab - Handblock Printed Ethnic Fashion",
+  "description": "A luxury e-commerce application for authentic Indian ethnic fashion featuring Bagru, Sanganeri, and Ajrakh handblock printed textiles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
