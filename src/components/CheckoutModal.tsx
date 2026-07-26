@@ -26,7 +26,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   const [formData, setFormData] = useState({
     fullName: 'Priya Sharma',
     email: 'priya.sharma@example.com',
-    phone: '9876543210',
+    phone: '8865986040',
     address: '12 Fort View Road, Subhash Marg',
     pincode: '341508',
     city: 'Kuchaman City',

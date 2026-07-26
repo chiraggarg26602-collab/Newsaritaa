@@ -8,31 +8,59 @@ export const LookbookSection: React.FC = () => {
   const lookbookImages = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
-      handle: '@diya.roy',
-      tag: 'Bagru Dabu Anarkali Set',
+      image: '/products/product-1.jpeg',
+      handle: '@diya.kuchaman',
+      tag: 'Bagru Mud-Resist Anarkali Kurta',
       likes: '1.2k'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80',
+      image: '/products/product-2.jpeg',
       handle: '@ananya_style',
-      tag: 'Ajrakh Double-Sided Silk Kurta Set',
+      tag: 'Ajrakh Geometric Royal Silk Kurta',
       likes: '2.4k'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=800&q=80',
+      image: '/products/product-3.jpeg',
       handle: '@meera.textiles',
-      tag: 'Sanganeri Floral Tiered Midi',
+      tag: 'Sanganeri Jaal Flare Tiered Kurta',
       likes: '980'
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80',
-      handle: '@jaipur.crafts',
-      tag: 'Dabu Mud-Resist Suit Set',
+      image: '/products/product-4.jpeg',
+      handle: '@saritaa.patron',
+      tag: 'Dabu Mud-Resist Handblock Suit',
       likes: '1.8k'
+    },
+    {
+      id: 5,
+      image: '/products/product-5.jpeg',
+      handle: '@kuchaman.vogue',
+      tag: 'Classic Floral Block Kurta',
+      likes: '2.1k'
+    },
+    {
+      id: 6,
+      image: '/products/product-6.jpeg',
+      handle: '@priya_rajasthan',
+      tag: 'Authentic Handblock Tunic Set',
+      likes: '1.5k'
+    },
+    {
+      id: 7,
+      image: '/products/product-7.jpeg',
+      handle: '@sneha.ethnic',
+      tag: 'Traditional Hand-Stamped Kurta',
+      likes: '3.1k'
+    },
+    {
+      id: 8,
+      image: '/products/product-8.jpeg',
+      handle: '@artisanal_chic',
+      tag: 'Organic Indigo Block Kurti',
+      likes: '2.7k'
     }
   ];
 

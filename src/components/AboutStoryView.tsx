@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Users, HeartHandshake, ShieldCheck, Leaf, Globe, Mail } from 'lucide-react';
+import { Sparkles, Users, HeartHandshake, ShieldCheck, Leaf, Globe, Mail, Phone } from 'lucide-react';
 import { SaritaaLogo } from './SaritaaLogo';
 
 export const AboutStoryView: React.FC = () => {
@@ -30,13 +30,25 @@ export const AboutStoryView: React.FC = () => {
             Every garment created at <strong>saritaa.in</strong> is hand-stamped with organic vegetable pigments, natural mud-resist Dabu paste, and fine Sanganeri floral motifs. No two outfits are identical—the subtle micro-variations bear the authentic mark of real artisan craftsmanship.
           </p>
 
-          <div className="pt-2 p-4 bg-[#F5EBF3] rounded-xl border border-[#E2CDDF] flex items-center gap-3 text-xs text-[#2B1A2A]">
-            <Mail className="w-5 h-5 text-[#6B4168] shrink-0" />
-            <div>
-              <p className="font-bold">Contact Founder & Care Team:</p>
-              <a href="mailto:sneha@saritaa.in" className="text-[#6B4168] font-bold hover:underline">
-                sneha@saritaa.in
-              </a>
+          <div className="pt-2 p-4 bg-[#F5EBF3] rounded-xl border border-[#E2CDDF] flex flex-col sm:flex-row sm:items-center gap-4 text-xs text-[#2B1A2A]">
+            <div className="flex items-center gap-2">
+              <Phone className="w-5 h-5 text-[#6B4168] shrink-0" />
+              <div>
+                <p className="font-bold text-[#6B4168]">Call / WhatsApp Support:</p>
+                <a href="tel:+918865986040" className="font-bold hover:underline text-[#2B1A2A]">
+                  +91 88659 86040
+                </a>
+              </div>
+            </div>
+            <div className="hidden sm:block text-[#C2A3BD]">|</div>
+            <div className="flex items-center gap-2">
+              <Mail className="w-5 h-5 text-[#6B4168] shrink-0" />
+              <div>
+                <p className="font-bold text-[#6B4168]">Email Care Team:</p>
+                <a href="mailto:sneha@saritaa.in" className="font-bold hover:underline text-[#2B1A2A]">
+                  sneha@saritaa.in
+                </a>
+              </div>
             </div>
           </div>
         </div>
