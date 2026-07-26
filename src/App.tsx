@@ -102,13 +102,13 @@ export default function App() {
 
   const handleOrderComplete = () => {
     setCartItems([]);
-    showToast('Your order has been placed successfully!');
+    showToast('Your order has been placed successfully on saritaa.in!');
   };
 
   const wishlistIds = wishlistItems.map(item => item.product.id);
 
   return (
-    <div className="min-h-screen bg-[#FAF7F2] flex flex-col font-sans text-[#2C2A29] antialiased">
+    <div className="min-h-screen bg-[#FAF4F8] flex flex-col font-sans text-[#2B1A2A] antialiased">
       {/* Sticky Top Header Navigation */}
       <Header
         currentTab={currentTab}
@@ -138,22 +138,22 @@ export default function App() {
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
               <div className="flex flex-col md:flex-row items-center justify-between mb-10 gap-4">
                 <div>
-                  <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C85A32]">
-                    Curated Bestsellers
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#6B4168]">
+                    Curated saritaa.in Bestsellers
                   </span>
-                  <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#1A1918] mt-1">
+                  <h2 className="font-serif-display text-3xl sm:text-4xl font-bold text-[#2B1A2A] mt-1">
                     Patron Favorite Outfits
                   </h2>
-                  <p className="text-xs text-[#7A6B5D] mt-1">
+                  <p className="text-xs text-[#7D5E7B] mt-1">
                     Most loved handblock-printed Anarkalis, sarees, and dresses across India.
                   </p>
                 </div>
 
                 <button
                   onClick={() => setCurrentTab('shop')}
-                  className="px-6 py-2.5 bg-[#1E2B3A] text-white text-xs font-semibold rounded-md hover:bg-[#C85A32] transition shadow-sm flex items-center gap-2 group shrink-0"
+                  className="px-6 py-2.5 bg-[#5C385A] text-white text-xs font-bold rounded-md hover:bg-[#6B4168] transition shadow-sm flex items-center gap-2 group shrink-0"
                 >
-                  <span>View All 50+ Products</span>
+                  <span>View All Products</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>

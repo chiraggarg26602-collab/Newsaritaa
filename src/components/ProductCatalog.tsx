@@ -106,25 +106,25 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Page Header Title */}
       <div className="text-center max-w-3xl mx-auto mb-10">
-        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C85A32]">
-          Exclusive Jaipur Collection
+        <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#6B4168]">
+          Exclusive saritaa.in Collection
         </span>
-        <h2 className="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1A1918] mt-2">
-          Handblock Printed Textiles
+        <h2 className="font-serif-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2B1A2A] mt-2">
+          Rajasthani Handblock Apparel
         </h2>
-        <p className="text-sm text-[#7A6B5D] mt-2 leading-relaxed">
+        <p className="text-sm text-[#7D5E7B] mt-2 leading-relaxed">
           Explore authentic Bagru, Sanganeri, and Ajrakh garments handcrafted on 100% organic cotton fabrics by Rajasthan master artisans.
         </p>
       </div>
 
       {/* Top Filter Bar Controls */}
-      <div className="bg-white p-4 rounded-xl border border-[#EADFCF] shadow-sm mb-8 flex flex-wrap items-center justify-between gap-4">
+      <div className="bg-white p-4 rounded-xl border border-[#E8D4E5] shadow-sm mb-8 flex flex-wrap items-center justify-between gap-4">
         
         {/* Left: Mobile Filter Toggle & Quick Category Pills */}
         <div className="flex items-center gap-3 overflow-x-auto py-1 scrollbar-none w-full md:w-auto">
           <button
             onClick={() => setIsMobileFilterOpen(!isMobileFilterOpen)}
-            className="md:hidden px-4 py-2 bg-[#1E2B3A] text-white text-xs font-semibold rounded-lg flex items-center gap-2 shrink-0"
+            className="md:hidden px-4 py-2 bg-[#5C385A] text-white text-xs font-bold rounded-lg flex items-center gap-2 shrink-0"
           >
             <SlidersHorizontal className="w-3.5 h-3.5" />
             Filters {activeFilterCount > 0 && `(${activeFilterCount})`}
@@ -136,10 +136,10 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
               <button
                 key={cat}
                 onClick={() => setFilters(prev => ({ ...prev, category: cat }))}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition whitespace-nowrap ${
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition whitespace-nowrap ${
                   filters.category === cat
-                    ? 'bg-[#C85A32] text-white shadow-sm'
-                    : 'bg-[#FAF7F2] text-[#2C2A29] hover:bg-[#EAE0D3] border border-[#EADFCF]'
+                    ? 'bg-[#6B4168] text-white shadow-sm'
+                    : 'bg-[#FAF4F8] text-[#2B1A2A] hover:bg-[#F2E5F2] border border-[#E8D4E5]'
                 }`}
               >
                 {cat}
@@ -149,17 +149,17 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
         </div>
 
         {/* Right: Sort By Dropdown & Total Count */}
-        <div className="flex items-center justify-between md:justify-end gap-4 w-full md:w-auto text-xs text-[#7A6B5D]">
+        <div className="flex items-center justify-between md:justify-end gap-4 w-full md:w-auto text-xs text-[#7D5E7B]">
           <span>
-            Showing <strong className="text-[#1A1918]">{filteredProducts.length}</strong> Products
+            Showing <strong className="text-[#2B1A2A]">{filteredProducts.length}</strong> Products
           </span>
 
           <div className="flex items-center gap-2">
-            <span className="font-medium text-[#2C2A29] hidden sm:inline">Sort by:</span>
+            <span className="font-semibold text-[#2B1A2A] hidden sm:inline">Sort by:</span>
             <select
               value={filters.sortBy}
               onChange={(e) => setFilters(prev => ({ ...prev, sortBy: e.target.value as any }))}
-              className="bg-[#FAF7F2] border border-[#EADFCF] rounded-lg px-3 py-1.5 text-xs font-medium text-[#1A1918] focus:outline-none focus:border-[#C85A32]"
+              className="bg-[#FAF4F8] border border-[#E8D4E5] rounded-lg px-3 py-1.5 text-xs font-medium text-[#2B1A2A] focus:outline-none focus:border-[#6B4168]"
             >
               <option value="featured">Featured / Bestseller</option>
               <option value="price-low">Price: Low to High</option>
@@ -175,15 +175,15 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         
         {/* Desktop Sidebar Filters */}
-        <div className="hidden md:block md:col-span-1 space-y-6 bg-white p-5 rounded-xl border border-[#EADFCF] h-fit sticky top-24">
-          <div className="flex items-center justify-between pb-3 border-b border-[#EADFCF]">
-            <h3 className="font-serif-display text-lg font-bold text-[#1A1918] flex items-center gap-2">
-              <Filter className="w-4 h-4 text-[#C85A32]" /> Filter Options
+        <div className="hidden md:block md:col-span-1 space-y-6 bg-white p-5 rounded-xl border border-[#E8D4E5] h-fit sticky top-24">
+          <div className="flex items-center justify-between pb-3 border-b border-[#E8D4E5]">
+            <h3 className="font-serif-display text-lg font-bold text-[#2B1A2A] flex items-center gap-2">
+              <Filter className="w-4 h-4 text-[#6B4168]" /> Filter Options
             </h3>
             {activeFilterCount > 0 && (
               <button
                 onClick={handleResetFilters}
-                className="text-[11px] font-semibold text-[#C85A32] hover:underline flex items-center gap-1"
+                className="text-[11px] font-bold text-[#6B4168] hover:underline flex items-center gap-1"
               >
                 <RotateCcw className="w-3 h-3" /> Reset
               </button>
@@ -192,21 +192,21 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
 
           {/* Craft Filter */}
           <div>
-            <h4 className="text-xs font-bold text-[#1A1918] uppercase tracking-wider mb-2.5">
+            <h4 className="text-xs font-bold text-[#2B1A2A] uppercase tracking-wider mb-2.5">
               Print Craft Heritage
             </h4>
             <div className="space-y-1.5">
               {CRAFT_TYPES.map(craft => (
                 <label 
                   key={craft}
-                  className="flex items-center gap-2.5 text-xs text-[#2C2A29] cursor-pointer hover:text-[#C85A32] transition"
+                  className="flex items-center gap-2.5 text-xs text-[#2B1A2A] cursor-pointer hover:text-[#6B4168] transition"
                 >
                   <input
                     type="radio"
                     name="craftFilter"
                     checked={filters.craft === craft}
                     onChange={() => setFilters(prev => ({ ...prev, craft: craft as any }))}
-                    className="accent-[#C85A32]"
+                    className="accent-[#6B4168]"
                   />
                   <span>{craft === 'All' ? 'All Craft Techniques' : `${craft} Handblock`}</span>
                 </label>
@@ -215,8 +215,8 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
           </div>
 
           {/* Size Filter */}
-          <div className="pt-4 border-t border-[#F5F0EB]">
-            <h4 className="text-xs font-bold text-[#1A1918] uppercase tracking-wider mb-2.5">
+          <div className="pt-4 border-t border-[#F5EBF3]">
+            <h4 className="text-xs font-bold text-[#2B1A2A] uppercase tracking-wider mb-2.5">
               Select Garment Size
             </h4>
             <div className="flex flex-wrap gap-2">
@@ -226,8 +226,8 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
                   onClick={() => setFilters(prev => ({ ...prev, selectedSize: size }))}
                   className={`px-3 py-1 rounded text-xs font-semibold border transition ${
                     filters.selectedSize === size
-                      ? 'bg-[#1E2B3A] text-white border-[#1E2B3A]'
-                      : 'bg-[#FAF7F2] text-[#2C2A29] border-[#EADFCF] hover:border-[#C85A32]'
+                      ? 'bg-[#5C385A] text-white border-[#5C385A]'
+                      : 'bg-[#FAF4F8] text-[#2B1A2A] border-[#E8D4E5] hover:border-[#6B4168]'
                   }`}
                 >
                   {size}
@@ -237,9 +237,9 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
           </div>
 
           {/* Price Filter */}
-          <div className="pt-4 border-t border-[#F5F0EB]">
+          <div className="pt-4 border-t border-[#F5EBF3]">
             <div className="flex items-center justify-between mb-2">
-              <h4 className="text-xs font-bold text-[#1A1918] uppercase tracking-wider">
+              <h4 className="text-xs font-bold text-[#2B1A2A] uppercase tracking-wider">
                 Max Price: ₹{filters.maxPrice.toLocaleString('en-IN')}
               </h4>
             </div>
@@ -250,24 +250,24 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
               step="250"
               value={filters.maxPrice}
               onChange={(e) => setFilters(prev => ({ ...prev, maxPrice: Number(e.target.value) }))}
-              className="w-full accent-[#C85A32]"
+              className="w-full accent-[#6B4168]"
             />
-            <div className="flex justify-between text-[11px] text-[#8C7A6B] mt-1 font-medium">
+            <div className="flex justify-between text-[11px] text-[#7D5E7B] mt-1 font-medium">
               <span>₹1,500</span>
               <span>₹10,000+</span>
             </div>
           </div>
 
           {/* Stock Filter Toggle */}
-          <div className="pt-4 border-t border-[#F5F0EB]">
-            <label className="flex items-center gap-2 text-xs text-[#2C2A29] cursor-pointer">
+          <div className="pt-4 border-t border-[#F5EBF3]">
+            <label className="flex items-center gap-2 text-xs text-[#2B1A2A] cursor-pointer">
               <input
                 type="checkbox"
                 checked={filters.inStockOnly}
                 onChange={(e) => setFilters(prev => ({ ...prev, inStockOnly: e.target.checked }))}
-                className="accent-[#C85A32] rounded"
+                className="accent-[#6B4168] rounded"
               />
-              <span className="font-medium">In Stock Items Only</span>
+              <span className="font-semibold">In Stock Items Only</span>
             </label>
           </div>
         </div>
@@ -278,30 +278,30 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
           {/* Active Search & Filter Tags */}
           {activeFilterCount > 0 && (
             <div className="mb-4 flex flex-wrap items-center gap-2">
-              <span className="text-xs text-[#7A6B5D] font-medium">Active Filters:</span>
+              <span className="text-xs text-[#7D5E7B] font-semibold">Active Filters:</span>
               {filters.category !== 'All' && (
-                <span className="bg-[#EAE0D3] text-[#1A1918] text-xs px-2.5 py-1 rounded-full flex items-center gap-1">
+                <span className="bg-[#F2E5F2] text-[#2B1A2A] text-xs px-2.5 py-1 rounded-full flex items-center gap-1 font-medium">
                   Category: {filters.category}
                   <X 
-                    className="w-3 h-3 cursor-pointer hover:text-[#C85A32]" 
+                    className="w-3 h-3 cursor-pointer hover:text-[#6B4168]" 
                     onClick={() => setFilters(p => ({ ...p, category: 'All' }))}
                   />
                 </span>
               )}
               {filters.craft !== 'All' && (
-                <span className="bg-[#EAE0D3] text-[#1A1918] text-xs px-2.5 py-1 rounded-full flex items-center gap-1">
+                <span className="bg-[#F2E5F2] text-[#2B1A2A] text-xs px-2.5 py-1 rounded-full flex items-center gap-1 font-medium">
                   Craft: {filters.craft}
                   <X 
-                    className="w-3 h-3 cursor-pointer hover:text-[#C85A32]" 
+                    className="w-3 h-3 cursor-pointer hover:text-[#6B4168]" 
                     onClick={() => setFilters(p => ({ ...p, craft: 'All' }))}
                   />
                 </span>
               )}
               {filters.searchQuery && (
-                <span className="bg-[#EAE0D3] text-[#1A1918] text-xs px-2.5 py-1 rounded-full flex items-center gap-1">
+                <span className="bg-[#F2E5F2] text-[#2B1A2A] text-xs px-2.5 py-1 rounded-full flex items-center gap-1 font-medium">
                   Search: "{filters.searchQuery}"
                   <X 
-                    className="w-3 h-3 cursor-pointer hover:text-[#C85A32]" 
+                    className="w-3 h-3 cursor-pointer hover:text-[#6B4168]" 
                     onClick={() => {
                       setFilters(p => ({ ...p, searchQuery: '' }));
                       setSearchQuery('');
@@ -314,17 +314,17 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
 
           {/* Empty State */}
           {filteredProducts.length === 0 ? (
-            <div className="bg-white p-12 text-center rounded-xl border border-[#EADFCF] my-8">
-              <Search className="w-12 h-12 text-[#D4A359] mx-auto mb-3 opacity-60" />
-              <h3 className="font-serif-display text-2xl font-bold text-[#1A1918]">
+            <div className="bg-white p-12 text-center rounded-xl border border-[#E8D4E5] my-8">
+              <Search className="w-12 h-12 text-[#6B4168] mx-auto mb-3 opacity-60" />
+              <h3 className="font-serif-display text-2xl font-bold text-[#2B1A2A]">
                 No Matching Block Print Products Found
               </h3>
-              <p className="text-xs text-[#7A6B5D] mt-2 max-w-md mx-auto">
-                We couldn't find any products matching your current filter choices or search term. Try adjusting your filters.
+              <p className="text-xs text-[#7D5E7B] mt-2 max-w-md mx-auto">
+                We couldn't find any products matching your current filter choices or search term. Try resetting your filters.
               </p>
               <button
                 onClick={handleResetFilters}
-                className="mt-5 px-6 py-2.5 bg-[#C85A32] text-white text-xs font-semibold rounded-md hover:bg-[#B04B26] transition"
+                className="mt-5 px-6 py-2.5 bg-[#6B4168] text-white text-xs font-semibold rounded-md hover:bg-[#5C385A] transition"
               >
                 Reset All Filters
               </button>
@@ -350,7 +350,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
                 <div className="text-center mt-12">
                   <button
                     onClick={() => setVisibleCount(prev => prev + 12)}
-                    className="px-8 py-3 bg-[#1E2B3A] text-white text-xs font-semibold uppercase tracking-wider rounded-md hover:bg-[#C85A32] transition shadow-md"
+                    className="px-8 py-3 bg-[#5C385A] text-white text-xs font-bold uppercase tracking-wider rounded-md hover:bg-[#6B4168] transition shadow-md"
                   >
                     Load More Artisanal Products
                   </button>
@@ -365,14 +365,14 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
       {/* Mobile Drawer Filter Modal */}
       {isMobileFilterOpen && (
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex justify-end md:hidden">
-          <div className="w-80 bg-[#FAF7F2] h-full p-6 overflow-y-auto space-y-6">
-            <div className="flex items-center justify-between pb-4 border-b border-[#EADFCF]">
-              <h3 className="font-serif-display text-lg font-bold text-[#1A1918]">
+          <div className="w-80 bg-[#FAF4F8] h-full p-6 overflow-y-auto space-y-6">
+            <div className="flex items-center justify-between pb-4 border-b border-[#E8D4E5]">
+              <h3 className="font-serif-display text-lg font-bold text-[#2B1A2A]">
                 Filters & Refinements
               </h3>
               <button 
                 onClick={() => setIsMobileFilterOpen(false)}
-                className="p-1 rounded text-[#2C2A29] hover:bg-[#EAE0D3]"
+                className="p-1 rounded text-[#2B1A2A] hover:bg-[#F2E5F2]"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -380,7 +380,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
 
             {/* Category Filter */}
             <div>
-              <h4 className="text-xs font-bold text-[#1A1918] uppercase tracking-wider mb-2">
+              <h4 className="text-xs font-bold text-[#2B1A2A] uppercase tracking-wider mb-2">
                 Category
               </h4>
               <div className="space-y-2">
@@ -392,7 +392,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
                       setIsMobileFilterOpen(false);
                     }}
                     className={`block w-full text-left text-xs py-1.5 px-3 rounded ${
-                      filters.category === cat ? 'bg-[#C85A32] text-white font-semibold' : 'text-[#2C2A29]'
+                      filters.category === cat ? 'bg-[#6B4168] text-white font-bold' : 'text-[#2B1A2A]'
                     }`}
                   >
                     {cat}
@@ -403,7 +403,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
 
             {/* Craft Filter */}
             <div>
-              <h4 className="text-xs font-bold text-[#1A1918] uppercase tracking-wider mb-2">
+              <h4 className="text-xs font-bold text-[#2B1A2A] uppercase tracking-wider mb-2">
                 Craft Heritage
               </h4>
               <div className="space-y-2">
@@ -415,7 +415,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
                       setIsMobileFilterOpen(false);
                     }}
                     className={`block w-full text-left text-xs py-1.5 px-3 rounded ${
-                      filters.craft === craft ? 'bg-[#C85A32] text-white font-semibold' : 'text-[#2C2A29]'
+                      filters.craft === craft ? 'bg-[#6B4168] text-white font-bold' : 'text-[#2B1A2A]'
                     }`}
                   >
                     {craft}
@@ -424,16 +424,16 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
               </div>
             </div>
 
-            <div className="pt-4 border-t border-[#EADFCF] flex items-center justify-between">
+            <div className="pt-4 border-t border-[#E8D4E5] flex items-center justify-between">
               <button
                 onClick={handleResetFilters}
-                className="text-xs text-[#C85A32] font-semibold underline"
+                className="text-xs text-[#6B4168] font-bold underline"
               >
                 Reset All
               </button>
               <button
                 onClick={() => setIsMobileFilterOpen(false)}
-                className="px-6 py-2 bg-[#1E2B3A] text-white text-xs font-semibold rounded"
+                className="px-6 py-2 bg-[#5C385A] text-white text-xs font-bold rounded"
               >
                 Apply Filters
               </button>
