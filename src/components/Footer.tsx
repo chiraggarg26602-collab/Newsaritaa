@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick, onCategoryClick }) =
                 <Mail className="w-3.5 h-3.5 text-[#D4A359]" /> <a href="mailto:sneha@saritaa.in" className="hover:text-white underline decoration-[#D4A359]">sneha@saritaa.in</a>
               </p>
               <p className="flex items-center gap-2 font-medium">
-                <Phone className="w-3.5 h-3.5 text-[#D4A359]" /> <a href="tel:+918865986040" className="hover:text-white underline decoration-[#D4A359]">+91 88659 86040</a> (Mon-Sat, 10 AM - 7 PM IST)
+                <Phone className="w-3.5 h-3.5 text-[#D4A359]" /> <a href="tel:+919214484540" className="hover:text-white underline decoration-[#D4A359]">+91 92144 84540</a> (Mon-Sat, 10 AM - 7 PM IST)
               </p>
             </div>
           </div>

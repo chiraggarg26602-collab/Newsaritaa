@@ -35,8 +35,8 @@ export const AboutStoryView: React.FC = () => {
               <Phone className="w-5 h-5 text-[#6B4168] shrink-0" />
               <div>
                 <p className="font-bold text-[#6B4168]">Call / WhatsApp Support:</p>
-                <a href="tel:+918865986040" className="font-bold hover:underline text-[#2B1A2A]">
-                  +91 88659 86040
+                <a href="tel:+919214484540" className="font-bold hover:underline text-[#2B1A2A]">
+                  +91 92144 84540
                 </a>
               </div>
             </div>
