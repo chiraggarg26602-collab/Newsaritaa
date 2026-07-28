@@ -1,13 +1,22 @@
 @import "tailwindcss";
 
 @layer base {
-  html {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+  html, body, button, input, select, textarea {
+    font-family: 'Poppins', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
   }
   
-  h1, h2, h3, h4, .font-serif-display {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+  h1, h2, h3, h4, h5, h6, .font-serif-display {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-serif {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-sans {
+    font-family: 'Poppins', 'Plus Jakarta Sans', sans-serif;
   }
 }
 
